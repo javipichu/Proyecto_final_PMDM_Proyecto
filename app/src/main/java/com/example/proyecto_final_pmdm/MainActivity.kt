@@ -23,6 +23,7 @@ class MainActivity : AppCompatActivity() {
         }
         Propuesta4.setOnClickListener {
             startActivity(Intent(this, ActivityReto4::class.java))
+
         }
     }
 }

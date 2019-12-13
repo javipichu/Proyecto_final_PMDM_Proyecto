@@ -13,6 +13,7 @@ import android.widget.TextView
 import android.widget.Toast
 import androidx.core.content.ContextCompat
 import kotlinx.android.synthetic.main.activity_reto1.*
+import org.jetbrains.anko.browse
 
 class ActivityReto1 : AppCompatActivity() {
 
@@ -26,6 +27,7 @@ class ActivityReto1 : AppCompatActivity() {
             }
             val i = Intent(Intent.ACTION_VIEW, Uri.parse("https://es.wikipedia.org/wiki/Revoluci%C3%B3n_francesa"))
             startActivity(i)
+
         }
 
         comprobar.setOnClickListener {
