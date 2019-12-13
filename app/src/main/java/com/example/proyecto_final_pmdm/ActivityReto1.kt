@@ -24,7 +24,7 @@ class ActivityReto1 : AppCompatActivity() {
             if (ContextCompat.checkSelfPermission(this, Manifest.permission.INTERNET)
                 != PackageManager.PERMISSION_GRANTED) {
             }
-            val i = Intent(Intent.ACTION_VIEW, Uri.parse("https://es.wikipedia.org/wiki/Crist%C3%B3bal_Col%C3%B3n"))
+            val i = Intent(Intent.ACTION_VIEW, Uri.parse("https://es.wikipedia.org/wiki/Revoluci%C3%B3n_francesa"))
             startActivity(i)
         }
 
@@ -37,19 +37,19 @@ class ActivityReto1 : AppCompatActivity() {
             val texto1String = texto1.text.toString()
             val texto2String = texto2.text.toString()
 
-            val nacimiento = "1451"
-            val fallecimiento = "1506"
+            val nacimiento = "1789"
+            val fallecimiento = "1799"
 
 
             if (texto1String.equals(nacimiento) && texto2String.equals(fallecimiento)){
                 val colorValue = Color.GREEN
                 layout.setBackgroundColor(colorValue)
-                Toast.makeText(this,"Respuestas correctas!", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this,"Respuesta correcta!", Toast.LENGTH_SHORT).show()
             }
             else {
                 val colorValue = Color.RED
                 layout.setBackgroundColor(colorValue)
-                Toast.makeText(this,"Ups! Revisa las respuestas", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this,"Ups! Respuesta incorresta", Toast.LENGTH_SHORT).show()
 
             }
 
